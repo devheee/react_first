@@ -1,0 +1,31 @@
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+.bg {
+    height: 300px;
+    background: url(../public/images/img.jpg) no-repeat;
+}
+
+.slide {
+    background: #f2f2f2;
+}
+
+.slide .itm01 {
+    background: #00f;
+}
+
+.slide .itm02 {
+    background: #f0f;
+}
+
+.slide .itm03 {
+    background: #ff0;
+}
+
+.dots {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}

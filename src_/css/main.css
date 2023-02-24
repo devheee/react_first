@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i,
+address,
+em {
+    font-style: normal;
+}
+
+body {
+    line-height: 1;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    background: #f2f2f2;
+    height: 100px;
+
+}
+
+.Header .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header .inner ul {
+    display: flex;
+    gap: 30px;
+}
+
+.TopBanner {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.TopBanner.on {
+    height: 0;
+}
+
+.TopBanner .btn {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-100%, 0);
+    margin: 0 0 0 600px;
+    font-size: 30px;
+}
+
+.MainContent {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.MainContent h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.MainContent p {
+    font-size: 15px;
+    margin: 0 0 30px 0;
+}
+
+.MainContent .inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.MainContent .inner>* {
+    position: relative;
+
+    height: 200px;
+    background: #f2f2f2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.MainContent .inner em {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    background: tomato;
+    color: #fff;
+    line-height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+
+.MainVisual {
+    background: #ddd;
+}
+
+.MainVisual .itm {
+    position: relative;
+    height: 500px;
+}
+
+.MainVisual .itm .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.MainVisual .itm01 {
+    background: tomato;
+}
+
+.MainVisual .itm02 {
+    background: teal;
+}
+
+.MainVisual .itm03 {
+    background: thistle;
+}
